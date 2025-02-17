@@ -1,6 +1,0 @@
-Base window size: height=37, width=121
-Subwindow size: height=35, width=119
-Base window size: height=37, width=121
-Subwindow size: height=35, width=119
-Base window size: height=37, width=121
-Subwindow size: height=35, width=119
