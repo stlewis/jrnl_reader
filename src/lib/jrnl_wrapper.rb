@@ -25,9 +25,7 @@ class JrnlWrapper
     def entry_content(title)
       formatted_date = title.split(' ').join('T')
       r = IO.popen("jrnl --format fancy -on #{formatted_date} --config-override colors.title none --config-override colors.date none", 'r+')
-      raw_content = r.read
-
-      ColorizedString.new(raw_content)
+      r.read
     end
   end
 end
