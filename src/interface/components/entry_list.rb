@@ -61,6 +61,7 @@ class EntryList
     menu_items = entries.map { |entry| Curses::Item.new(entry[:date], entry[:title]) }
     @menu = Curses::Menu.new(menu_items)
     @menu.set_win(nav_window)
+    @menu.set_format(Curses.lines - 4, 1)
     @menu.post
   end
 end
